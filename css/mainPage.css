@@ -1,0 +1,30 @@
+#header{
+    padding: 14px 0 2px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    z-index: 5;
+    height: 50px;
+}
+
+
+a {text-decoration: none;}
+#content{
+    height: 600px;
+}
+
+.wrapper {
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#footer{
+    background: #111 url(https://static.toiimg.com/photo/57270035.cms) repeat;
+    padding: 20px 0;
+    border-top: 3px solid #be2819;
+    position: relative;
+    z-index: 98 !important;
+}
+
