@@ -7,10 +7,9 @@
     height: 50px;
 }
 
-
 a {text-decoration: none;}
 #content{
-    height: 600px;
+    height: 500px;
 }
 
 .wrapper {
@@ -28,3 +27,95 @@ a {text-decoration: none;}
     z-index: 98 !important;
 }
 
+/* header */
+
+#header .my-home{
+    position: absolute;
+    left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 12px 5px 37px;
+    color: #999;
+    font: normal 12px/18px arial;
+    top: 9px;
+}
+#header .my-home:before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    width: 26px;
+    height: 20px;
+    background-position: -351px -122px;
+    background-image: url(https://static.toiimg.com/photo/67487670.cms);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    display: inline-block;
+}
+
+#header .prime-logo {
+    text-align: center;
+}
+
+#header .right-section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 35px;
+}
+#header .user-area {
+    text-align: right;
+    float: right;
+    position: relative;
+    padding-right: 20px;
+}
+#header .user-area .user-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    margin-right: 8px;
+    background-position: -152px -7px;
+    border-radius: 50%;
+}
+.prime-sprite{
+    background-image: url(https://static.toiimg.com//photo/67487670.cms);
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+#header .user-area .user-notloggedin a {
+    font-size: 12px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: arial,sans-serif;
+}
+
+/* Footer */
+
+#footer .wrapper {
+    max-width: 1295px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+#footer p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #ccc;
+    text-align: center;
+}
+#footer p a.linkfaq {
+    margin-bottom: 1px;
+    display: inline-block;
+}
+#footer p a {
+    color: #ccc;
+    text-decoration: none;
+}
+#footer * {
+    font-family: proximanova,roboto,arial,sans-serif;
+}
