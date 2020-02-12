@@ -163,9 +163,131 @@ var sportsData = {
         }
     ]
 };
+var graphData = [{
+        name: "TOI",
+        y: 62.74,
+        drilldown: "TOI"
+    },
+    {
+        name: "THE HINDU",
+        y: 10.57,
+        drilldown: "THE HINDU"
+    },
+    {
+        name: "NBT",
+        y: 7.23,
+        drilldown: "NBT"
+    },
+    {
+        name: "ET",
+        y: 5.58,
+        drilldown: "ET"
+    },
+    {
+        name: "THE QUINT",
+        y: 4.02,
+        drilldown: "THE QUINT"
+    },
+    {
+        name: "THE LALANTOP",
+        y: 1.92,
+        drilldown: "THE LALANTOP"
+    },
+    {
+        name: "Other",
+        y: 7.62,
+        drilldown: null
+    }
+];
+var graphDataDrilldown = [{
+        name: "TOI",
+        id: "TOI",
+        data: [
+            ["BUISNESS", 0.1],
+            ["SPORTS", 1.3],
+            ["BOLYWOOD", 53.02],
+            ["EDUCATION", 1.4],
+            ["CRICKET", 0.88],
+            ["FOOTBALL", 0.56],
+            ["CHESS", 0.45],
+            ["AGRICULTURE", 0.49],
+            ["MACHINE", 0.32],
+            ["SCIENCE", 0.29],
+            ["TECHNOLOGY", 0.79],
+            ["FICTION", 0.18],
+            ["ASTRO", 0.13],
+            ["LIFE", 2.16],
+            ["YOGA", 0.13],
+            ["EXCERCISE", 0.11],
+            ["ROMANCE", 0.17],
+            ["CRIME", 0.26]
+        ]
+    },
+    {
+        name: "THE HINDU",
+        id: "THE HINDU",
+        data: [
+            ["SPORTS", 1.02],
+            ["FINANCE", 7.36],
+            ["SPORTS", 0.35],
+            ["ECONOMY", 0.11],
+            ["FOOTBALL", 0.1],
+            ["SCIENCE", 0.95],
+            ["FICTION", 0.15],
+            ["YOGA", 0.1],
+            ["ROMANCE", 0.31],
+            ["BUISNESS", 0.12]
+        ]
+    },
+    {
+        name: "NBT",
+        id: "NBT",
+        data: [
+            ["FINANCE", 6.2],
+            ["MACHINE", 0.29],
+            ["SPORTS", 0.27],
+            ["FILMS", 0.47]
+        ]
+    },
+    {
+        name: "ET",
+        id: "ET",
+        data: [
+            ["BUISNESS", 3.39],
+            ["SPORTS", 0.96],
+            ["FINANCE", 0.36],
+            ["YOGA", 0.54],
+            ["CHESS", 0.13],
+            ["CRIME", 0.2]
+        ]
+    },
+    {
+        name: "THE QUINT",
+        id: "THE QUINT",
+        data: [
+            ["SOCIAL", 2.6],
+            ["BUISNESS", 0.92],
+            ["MACHINE", 0.4],
+            ["CRICKET", 0.1]
+        ]
+    },
+    {
+        name: "THE LALANTOP",
+        id: "THE LALANTOP",
+        data: [
+            ["POLITICS", 0.96],
+            ["ELECTIONS", 0.82],
+            ["SOCIAL", 0.14]
+        ]
+    }
+];
 
 var DataManager = (function () {
     return {
         sportsData: sportsData,
+        graphData: {
+            mainGraphData: graphData,
+            drillDownData: graphDataDrilldown
+        }
     };
 })();

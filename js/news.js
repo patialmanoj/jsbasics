@@ -1,11 +1,14 @@
 
 var  newsPlugin = (function(){
-    var data = undefined;
+    var data = undefined,
+    graphData = undefined;
     function init(){
         console.log("plugin module is init ");
         // initSlider();
         data = DataManager.sportsData;
+        graphData = DataManager.graphData;
         appendBigNews();
+        createNewsGraph();
     }
 
     function createTheBigNews(){
@@ -35,6 +38,59 @@ var  newsPlugin = (function(){
         var html = createTheBigNews();
         $('.bigNews ul').append(html);
         //$('.small ul').append(html);
+    }
+
+    function createNewsGraph(){
+        Highcharts.chart('graph-listing', {
+            chart: {
+              type: 'column'
+            },
+            title: {
+              text: 'News Portal Statistics. January, 2020'
+            },
+            subtitle: {
+              text: 'Click the columns to view versions. Source: <a href="https://timesofindia.indiatimes.com" target="_blank">Anonymous Data just for training </a>'
+            },
+            accessibility: {
+              announceNewData: {
+                enabled: false
+              }
+            },
+            xAxis: {
+              type: 'News Portal'
+            },
+            yAxis: {
+              title: {
+                text: 'Total news distribution share'
+              }
+            },
+            legend: {
+              enabled: false
+            },
+            plotOptions: {
+              series: {
+                borderWidth: 0,
+                dataLabels: {
+                  enabled: true,
+                  format: '{point.y:.1f}%'
+                }
+              }
+            },
+          
+            tooltip: {
+              headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+              pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+            },
+          
+            series: [{
+              name: "NEWS DATA",
+              colorByPoint: true,
+              data: graphData.mainGraphData,
+            }],
+            drilldown: {
+              series: graphData.drillDownData
+            }
+          });
     }
 
     return {
