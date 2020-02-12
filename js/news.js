@@ -4,12 +4,36 @@ var  newsPlugin = (function(){
     graphData = undefined;
     function init(){
         console.log("plugin module is init ");
-        // initSlider();
+        initSlider();
         data = DataManager.sportsData;
         graphData = DataManager.graphData;
         appendBigNews();
         createNewsGraph();
+        bindClicks();
     }
+
+    function bindClicks(){
+        $('.slider_button').on("click",function(event){
+          var  $el= $(event.target);
+          var $slider= $('.slider ul');
+          var $elBttn = $el.data("btn");
+          var margin =  $slider.data("marginleft") ;
+            
+          if($elBttn == 'left' ){ //&& margin > -600
+            margin = margin- 200;
+            $slider.css("margin-left", margin);
+            $slider.data("marginleft",margin);
+          }
+          else{
+            if(margin != 0 ){ //&& $elBttn == 'right'
+              margin = margin + 200;
+              $slider.css("margin-left", margin);
+              $slider.data("marginleft",margin); 
+            }
+          }
+        });
+  
+      }
 
     function createTheBigNews(){
         var html = '';
@@ -33,6 +57,13 @@ var  newsPlugin = (function(){
         }
         return html;
     }
+
+    function initSlider(){
+        $('.slider').removeClass("hide");
+        $('.slider ul').data("marginleft",0);
+        $('.slider ul').data("marginright",900);
+        
+      }
 
     function appendBigNews(){
         var html = createTheBigNews();

@@ -1,4 +1,4 @@
-#header{
+#header {
     padding: 14px 0 2px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
@@ -7,7 +7,9 @@
     height: 50px;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 .wrapper {
     max-width: 1030px;
@@ -16,7 +18,7 @@ a {text-decoration: none;}
     padding: 0 15px;
 }
 
-#footer{
+#footer {
     background: #111 url(https://static.toiimg.com/photo/57270035.cms) repeat;
     padding: 20px 0;
     border-top: 3px solid #be2819;
@@ -26,7 +28,7 @@ a {text-decoration: none;}
 
 /* header */
 
-#header .my-home{
+#header .my-home {
     position: absolute;
     left: 40px;
     border: 1px solid #ccc;
@@ -36,6 +38,7 @@ a {text-decoration: none;}
     font: normal 12px/18px arial;
     top: 9px;
 }
+
 #header .my-home:before {
     content: '';
     position: absolute;
@@ -59,12 +62,14 @@ a {text-decoration: none;}
     top: 0;
     padding: 10px 35px;
 }
+
 #header .user-area {
     text-align: right;
     float: right;
     position: relative;
     padding-right: 20px;
 }
+
 #header .user-area .user-icon {
     display: inline-block;
     width: 30px;
@@ -75,7 +80,8 @@ a {text-decoration: none;}
     background-position: -152px -7px;
     border-radius: 50%;
 }
-.prime-sprite{
+
+.prime-sprite {
     background-image: url(https://static.toiimg.com//photo/67487670.cms);
     background-repeat: no-repeat;
     background-size: 500px;
@@ -87,7 +93,7 @@ a {text-decoration: none;}
     color: #000;
     font-weight: 700;
     text-transform: capitalize;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
 }
 
 /* Footer */
@@ -99,22 +105,26 @@ a {text-decoration: none;}
     padding: 0 15px;
     box-sizing: border-box;
 }
+
 #footer p {
     font-size: 12px;
     line-height: 1.4;
     color: #ccc;
     text-align: center;
 }
+
 #footer p a.linkfaq {
     margin-bottom: 1px;
     display: inline-block;
 }
+
 #footer p a {
     color: #ccc;
     text-decoration: none;
 }
+
 #footer * {
-    font-family: proximanova,roboto,arial,sans-serif;
+    font-family: proximanova, roboto, arial, sans-serif;
 }
 
 /* content */
@@ -126,6 +136,7 @@ a {text-decoration: none;}
     width: 600px;
     float: left;
 }
+
 .news-listing.top-news.small {
     width: 328px;
     float: right;
@@ -139,11 +150,13 @@ a {text-decoration: none;}
     clear: both;
     visibility: hidden;
 }
+
 .news-listing ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
+
 .news-listing ul li {
     list-style: none;
     margin-bottom: 25px;
@@ -164,8 +177,9 @@ a {text-decoration: none;}
     line-height: 36px;
     max-height: 72px;
 }
+
 .news-listing h2 {
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 27px;
     color: #333;
@@ -176,6 +190,7 @@ a {text-decoration: none;}
     -webkit-box-orient: vertical;
     max-height: 72px;
 }
+
 .news-listing p {
     display: -webkit-box;
     overflow: hidden;
@@ -184,33 +199,98 @@ a {text-decoration: none;}
     max-height: 96px;
     margin-bottom: 12px;
 }
+
 p {
-    font-family: Georgia,'Times New Roman',Times,serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 24px;
     color: #333;
 }
-.news-listing p ~ span {
+
+.news-listing p~span {
     position: relative;
     margin-right: 20px;
     display: inline-block;
     margin-bottom: 10px;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: gray;
 }
+
 .news-listing figure img {
     width: 100%;
     border-radius: inherit;
     border: 1px solid #f9f9f9;
 }
+
 .news-listing.top-news:not(.small) figure {
     height: 338px;
 }
+
 .news-listing figure {
     width: 100%;
     margin: 0 0 18px;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+}
+
+/* part 5 */
+.graph-listing {
+    background: #f3eaea;
+    height: auto;
+    width: 500px;
+}
+
+
+/* slider */
+
+.slider {
+    padding: 10px 10px;
+    height: 138px;
+}
+
+.inner {
+    position: relative;
+    height: 98%;
+    width: 900px;
+    margin: 0px auto;
+    background-color: red;
+    padding: 3px 15px;
+    overflow: hidden;
+}
+
+.inner ul {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: block;
+    height: 95%;
+    padding: 0px;
+}
+
+.inner ul li {
+    width: 200px;
+    display: inline-block;
+    height: 85%;
+    background-color: green;
+    position: relative;
+    margin: 0px 2px;
+}
+span.slider_button {
+    position: relative;
+    top: -90px;
+    margin-left: 19%;
+    display: inline-block;
+    margin-right: 19%;
+    cursor: pointer;
+    height: 36px;
+    background-color: blue;
+    width: 35px;
+    float:left;
+    color:white;
+    line-height: 33px;
+}
+span.right_bttn{
+    float:right;
 }

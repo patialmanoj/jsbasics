@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../css/mainPage.css" />
-  
+
 </head>
 
 <body>
@@ -49,7 +49,21 @@
         </div>
       </div>
     </header>
-
+    <div class="slider hide">
+      <div class="inner">
+        <ul>
+          <li>first slide</li>
+          <li>second slide</li>
+          <li>third slide</li>
+          <li>fourt slide</li>
+          <li>fifth slide</li>
+          <li>sixth slide</li>
+          <li>seventh slide</li>
+        </ul>
+      </div>
+      <span class="slider_button left_bttn" data-btn="left"> << </span> 
+      <span class="slider_button right_bttn" data-btn="right"> >> </span>
+    </div>
     <!-- Content -->
     <div id="content">
       <div class="wrapper clearfix">
@@ -84,7 +98,8 @@
           <div class="news-listing top-news small">
             <ul class="clearfix">
               <li class="clearfix">
-                <a href="https://timesofindia.indiatimes.com/india/rise-of-the-other-shaheen-baghs/articleshow/73514765.cms">
+                <a
+                  href="https://timesofindia.indiatimes.com/india/rise-of-the-other-shaheen-baghs/articleshow/73514765.cms">
                   <figure>
                     <img alt="Rise of the other Shaheen Baghs"
                       src="https://timesofindia.indiatimes.com/thumb/imgsize-328519,msid-73520705,width-328,resizemode-4/73520705.jpg" />
@@ -137,9 +152,9 @@
     // $(document).ready(function(){
     //     console.log("DOM is ready ");
     // });
-    $(function(){
-        console.log("Can we write it again !!");
-        newsPlugin.init();
+    $(function () {
+      console.log("Can we write it again !!");
+      newsPlugin.init();
     });
   </script>
 </body>
