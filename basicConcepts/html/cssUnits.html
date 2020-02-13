@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent {
+            background:#c8f1c8;
+            height: 400px;
+            width: 400px;
+        }
+        .child {
+            background: #d3d3ff;
+            /* height: 50%;   
+            width: 100%;
+            float :left; */
+
+            /* padding :20px;
+            box-sizing: border-box; */
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. <p>Percetntage % will take the dimension accordig to its parent element</p> -->
+    <!-- add more child and see -->
+    <!-- <div class="parent">
+        <div class="child"></div>
+    </div>
+     -->
+
+    <!-- 2.VIEW Port dimensions vw, vh , vmin , vmax-->
+    <!--  vw, vh divide the viewport in grid of 100 * 100 units -->
+<!-- 
+    <div class="example">
+        <div class= "vw"></div>
+    </div>
+     -->
+    <style>
+        .vw{
+            background: #d3d3ff;
+            /* height: 50vh;
+            width: 50vw; */
+        }    
+    </style>
+
+    <!-- 3 view port min and view port max -->
+    <!-- vmin will respond  according to the shorter the dimension of viewport -->
+    <!-- vmax will respond  according to the bigger the dimension of viewport -->
+    
+    <!-- <div class="example">
+        <div class= "vmin"></div>
+    </div> -->
+
+    <style>
+        .vmin{
+            background: #d3d3ff;
+            height: 400px;
+            width: 50vmin;
+        }    
+    </style>
+
+    <!-- Absolute -->
+    <!--3. ex & ch  ,ex based height of the x of the font-family using 
+        ch is based on width of 0
+    -->
+    <!-- <div class="example">
+        <div class= "ex">x 0</div>
+    </div> -->
+    <style>
+        .ex{
+            background: #d3d3ff;
+            height: 5ex;
+            width: 50%;
+
+            font-size : 30px;
+            font-family :serif;
+        }
+    </style>
+
+    <!-- 4. rem and em  -->
+    <!-- em is based on font-size and its cascadin in nature -->
+    <!-- rem don't multiply or cascade , it is reshape according to the root font size-->
+    
+    <div class="example">
+        <div class= "em">2m
+            <!-- <div class= "em">2m
+                <div class= "em">
+                    2m
+                </div>
+            </div> -->
+         </div>
+    </div>
+
+    <br>
+
+    <div class="example">
+        <!-- <div class= "rem">2rm
+            <div class= "rem">2rm
+                <div class= "rem">
+                    2rm
+                </div>
+            </div>
+         </div> -->
+    </div>
+
+
+
+    <style>
+        .example{ font-size: 10px;}
+        .em{
+            background: #d3d3ff;
+            width: 2em;
+            font-size:2em
+        }
+        .rem{
+            background: #d3d3ff;
+            width: 2rem;
+            font-size:2rem
+        }
+    </style>
+
+    <!--  Absolute lengths , self regulating ,, they do not   base there dimension on anything else on the page -->
+    <!-- Are  based on real -world measurements -->
+
+    <!-- <div class="example">
+        <div class="in"> 3 inches</div>
+        <br>
+        <div class="cm"> 3 centimeters</div>
+        <br>
+
+        <div class="mm"> 3 Millimeters</div>
+        <br>
+
+        <div class="pt"> 3 points</div>
+        <br>
+        <div class="pc"> 3 Picas</div>
+        <br>
+
+
+    </div> -->
+
+    <style>
+        /* .example > div{
+            background: #d3d3ff;
+            padding : 20px 0;
+            font-size: 16px;
+            white-space: nowrap;
+        } */
+        .in{width: 3in;}
+        .cm{width: 3cm;}
+        .mm{width: 3mm;}
+        .pt{width: 3pt;} 
+        /* points is  1/72 of inch */
+        .pc{width: 3pc;} 
+        /* pica is 12 points */
+
+    </style>
+
+    <!-- Pixels , depned on the device pixels -->
+
+    <div class="example">
+        <div class="px"></div>
+    </div>
+
+    <style>
+        .example > div{
+            background: #d3d3ff;
+           height: 200px;
+           width: 400px;
+        }
+    </style>
+
+</body>
+</html>
